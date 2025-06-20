@@ -10,6 +10,13 @@
     --accent: #D0BCFF
   Make sure these are added to tailwind.config.js for theme extension.
 */
+/* xs: variant for grid-cols-2 for extra-small screens if not present */
+@media (min-width: 480px) {
+  .xs\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: grid;
+  }
+}
 * {
   box-sizing: border-box;
 }

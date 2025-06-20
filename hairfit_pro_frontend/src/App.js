@@ -25,23 +25,14 @@ function Profile() {
     </div>
   );
 }
-function RoutinePlanner() {
-  // PUBLIC_INTERFACE
-  return (
-    <div className="py-10">
-      <h1 className="text-4xl font-bold text-primary mb-4">Routine Planner</h1>
-      <p className="text-secondary">Plan your daily hair routines here.</p>
-    </div>
-  );
-}
+
+import HairRoutinePlanner from "./HairRoutinePlanner";
+
+import HairRoutinePlanner from "./HairRoutinePlanner";
+
 function Routine() {
   // PUBLIC_INTERFACE
-  return (
-    <div className="py-10">
-      <h1 className="text-4xl font-bold text-primary mb-4">Your Personalized Routine</h1>
-      <p className="text-secondary">Welcome! Your routine is ready.</p>
-    </div>
-  );
+  return <HairRoutinePlanner />;
 }
 
 function Products() {
