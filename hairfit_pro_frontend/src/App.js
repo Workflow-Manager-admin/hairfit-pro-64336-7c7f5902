@@ -13,12 +13,15 @@ import Homepage from "./Homepage";
 //     </div>
 //   );
 // }
+import MultiStepProfileForm from "./MultiStepProfileForm";
+
 function Profile() {
   // PUBLIC_INTERFACE
   return (
-    <div className="py-10">
-      <h1 className="text-4xl font-bold text-primary mb-4">Profile</h1>
-      <p className="text-secondary">Manage your personal information.</p>
+    <div className="py-4 flex flex-col items-center">
+      <h1 className="text-4xl font-bold text-primary mb-3">Your Hair Profile</h1>
+      <p className="text-secondary mb-3">Let's get to know your hair by answering a few quick questions.</p>
+      <MultiStepProfileForm />
     </div>
   );
 }
@@ -31,6 +34,16 @@ function RoutinePlanner() {
     </div>
   );
 }
+function Routine() {
+  // PUBLIC_INTERFACE
+  return (
+    <div className="py-10">
+      <h1 className="text-4xl font-bold text-primary mb-4">Your Personalized Routine</h1>
+      <p className="text-secondary">Welcome! Your routine is ready.</p>
+    </div>
+  );
+}
+
 function Products() {
   // PUBLIC_INTERFACE
   return (
@@ -195,6 +208,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/profile" element={<Profile />} />
+              <Route path="/routine" element={<Routine />} />
               <Route path="/routine-planner" element={<RoutinePlanner />} />
               <Route path="/products" element={<Products />} />
               <Route path="/blog" element={<Blog />} />
