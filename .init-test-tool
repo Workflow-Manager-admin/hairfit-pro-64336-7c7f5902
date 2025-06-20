@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/code-generation/hairfit-pro-64336-7c7f5902/hairfit_pro_frontend"
+}
