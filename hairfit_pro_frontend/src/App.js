@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 
+import Homepage from "./Homepage";
+
 // Page stubs for navigation
-function Home() {
-  // PUBLIC_INTERFACE
-  return (
-    <div className="py-10">
-      <h1 className="text-4xl font-bold text-primary mb-4">Home</h1>
-      <p className="text-secondary">Welcome to HairFit Pro!</p>
-    </div>
-  );
-}
+// function Home() {
+//   // PUBLIC_INTERFACE
+//   return (
+//     <div className="py-10">
+//       <h1 className="text-4xl font-bold text-primary mb-4">Home</h1>
+//       <p className="text-secondary">Welcome to HairFit Pro!</p>
+//     </div>
+//   );
+// }
 function Profile() {
   // PUBLIC_INTERFACE
   return (
@@ -191,7 +193,7 @@ function App() {
         <div className="pt-24 pb-8 px-4 max-w-4xl mx-auto w-full">
           <div className="bg-white rounded-2xl shadow-md px-6 py-8 min-h-[60vh] transition-all duration-300 ease-in-out">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Homepage />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/routine-planner" element={<RoutinePlanner />} />
               <Route path="/products" element={<Products />} />
